@@ -11,11 +11,11 @@ app.config['SECRET_KEY'] = '3af78194d11f5f973dd0c3f82a7be527'
 @app.route("/")   
 @app.route("/home")
 def home():
-  return render_template('home.html', subtitle='Home Page', text="Welcome to the home page")      
+  return render_template('home.html', subtitle='Home Page', text="Welcome to the home page. Things are under construction.")      
   
 @app.route("/about")
 def about():
-  return render_template('about.html', subtitle="About", text="This is a second page")
+  return render_template('about.html', subtitle="About", text="This is a second page that can become the About page.")
 
 @app.route("/register", methods=['GET', 'POST'])
 def register():
